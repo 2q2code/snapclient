@@ -2640,7 +2640,7 @@ void app_main(void) {
   //  ESP_LOGI(TAG, "Setup ws server");
   //  websocket_if_start();
 
-  net_mdns_register("snapclient");
+  net_mdns_register(SNAPCAST_CLIENT_NAME);
 #ifdef CONFIG_SNAPCLIENT_SNTP_ENABLE
   set_time_from_sntp();
 #endif
